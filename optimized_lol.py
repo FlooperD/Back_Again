@@ -136,13 +136,14 @@ x_test = np.arange(train_size, train_size + test_size)
 plt.plot(np.arange(train_size), train_data_inverse.flatten(), label='Training Data')
 
 # Plot the testing data and predictions
-plt.plot(np.arange(train_size, train_size + test_size), test_data_inverse.flatten(), label='Testing Data')
-plt.plot(np.arange(train_size, train_size + test_size), y_pred_inverse[:test_size].flatten(), label='Predictions')
+plt.plot(np.arange(train_size, train_size + test_size), test_data_inverse.flatten()[:test_size], label='Testing Data')
+plt.plot(np.arange(train_size, train_size + test_size), y_pred_inverse.flatten()[:test_size], label='Predictions')
 
 plt.xlabel('Time')
 plt.ylabel('Price')
 plt.title('BTC Price Prediction')
 plt.legend()
 plt.show()
+
 
 client.close_connection()
