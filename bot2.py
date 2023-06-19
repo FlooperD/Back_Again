@@ -9,8 +9,8 @@ from ta.momentum import RSIIndicator
 from ta.trend import MACD
 
 # Set up the Binance API client
-api_key = 'FEOKFzr1eTE5XkFM5q2Bdmu7k8KHbimFBnsbgYDZDY1W4qg2cpbZPgUYrKxitDin'
-api_secret = 'L1yojgYtxG7HxlDiMI52KktMJ3XKgXvWq06WG1R8SJYSzMxcHRrHQLEIihVSd19P'
+api_key = 'KEY'
+api_secret = 'SECRET'
 client = Client(api_key, api_secret)
 
 # Retrieve historical price data
